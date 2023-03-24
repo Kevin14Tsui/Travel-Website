@@ -84,3 +84,75 @@ section{
 .header .flex .navbar a:hover{
     color: var(--white);
 }
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* media qeries */
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .flex{
+        position: relative;
+    }
+
+    .header .flex .navbar{
+        position: absolute;
+        top: 100%; left: 2rem; right: 2rem;
+        background-color: var(--light-white);
+        backdrop-filter: blur(.4rem);
+        border-radius: .5rem;
+        transform: scale(0) ;
+        transform-origin: top right;
+        transition: .2s linear;
+    }
+
+    .header .flex .navbar.active{
+        transform: scale(1);
+        transition: .2s linear;
+    }
+
+    .header .flex .navbar a{
+        display: block;
+        padding: .5rem 1.5rem;
+        margin: 1.5rem  .5rem;
+        color: var(--white);
+        border-radius: .5rem;
+    }
+
+    .header .flex .navbar a:hover{
+        background-color: var(--light-bg);
+    }
+
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
