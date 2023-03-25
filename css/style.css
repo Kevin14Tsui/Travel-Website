@@ -329,6 +329,72 @@ section {
     background-color: var(--light-black);
 }
 
+/* tours */
+.tours {
+    background: url("../images/tour-bg.jpg") no-repeat rgba(0, 0, 0, .8);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.tours .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.tours .grid .box{
+    background-color: var(--light-bg);
+    padding: 2rem;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+    position: relative;
+}
+
+.tours .grid .box .price{
+    position: absolute;
+    top: 2.9rem; left: 3rem;
+    border-radius: .5rem;
+    background: var(--light-black);
+    font-size: 1.8rem;
+    padding: .8rem 1rem;
+}
+
+.tours .grid .box .price i{
+    color: var(--main-color);
+    margin-right: .5rem;
+}
+
+.tours .grid .box .price span{
+    color: var(--white);
+}
+
+.tours .grid .box .image{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tours .grid .box .name{
+    font-size: 2rem;
+    color:var(--white)
+}
+
+.tours .grid .box .address{
+    font-size: 1.7rem;
+    color: var(--light-white);
+    line-height: 1.5;
+    padding: 0.5rme 0;
+}
+
+.tours .grid .box:hover{
+    background-color: var(--light-black);
+}
+
 /* media qeries */
 @media(max-width:991px) {
 
