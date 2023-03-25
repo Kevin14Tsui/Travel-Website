@@ -61,6 +61,15 @@ section {
     padding: 2rem;
 }
 
+.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
 .btn{
     display: block;
     border-radius: .5rem;
@@ -125,6 +134,7 @@ section {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    background-blend-mode: multiply;
 }
 
 .home .flex{
@@ -176,6 +186,7 @@ section {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    background-blend-mode: multiply;
 }
 
 .about .details{
@@ -220,7 +231,7 @@ section {
 
 .about .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,30rem);
+    grid-template-columns: repeat(auto-fit,35rem);
     align-items: flex-start;
     justify-content: center;
     gap:1.5rem;
@@ -262,11 +273,72 @@ section {
 }
 
 
+.reviews {
+    background: url("../images/reviews-bg.jpg") no-repeat rgba(0, 0, 0, .8);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.reviews .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.reviews .grid .box{
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+
+.reviews .grid .box img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.reviews .grid .box h3{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.reviews .grid .box p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-white);
+    font-size: 1.5rem;
+}
+
+.reviews .grid .box .stars{
+    margin-top: 1rem;
+}
+
+.reviews .grid .box .stars i{
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.reviews .grid .box:hover{
+    background-color: var(--light-black);
+}
+
 /* media qeries */
 @media(max-width:991px) {
 
     html {
         font-size: 55%;
+    }
+
+    .heading{
+        font-size: 5rem;
+        margin-bottom: 3rem;
     }
 
 }
@@ -311,12 +383,20 @@ section {
         background-color: var(--light-bg);
     }
 
+    .heading{
+        font-size: 3rem;
+    }
+
 }
 
 @media(max-width:450px) {
 
     html {
         font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
     }
 
 }
