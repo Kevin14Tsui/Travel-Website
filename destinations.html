@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- font awesomme cdn like -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
@@ -16,7 +18,7 @@
 
 <body>
     <!-- header section starts -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
 
         <section class="flex">
 
@@ -41,35 +43,35 @@
         <h1 class="heading">Destinations</h1>
 
         <section class="grid">
-            <div class="box">
+            <div class="box" data-aos="flip-left" data-aos-delay="200">
                 <img src="images/destination-1.jpg" alt="">
                 <h3>
                     <span>Istanbul</span>
                 </h3>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="flip-left" data-aos-delay="200">
                 <img src="images/destination-2.jpg" alt="">
                 <h3>
                     <span>California</span>
                 </h3>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="flip-left" data-aos-delay="200">
                 <img src="images/destination-3.jpg" alt="">
                 <h3>
                     <span>London</span>
                 </h3>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="flip-left" data-aos-delay="200">
                 <img src="images/destination-4.jpg" alt="">
                 <h3>
                     <span>Morocco</span>
                 </h3>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="flip-left" data-aos-delay="200">
                 <img src="images/destination-5.jpg" alt="">
                 <h3>
                     <span>New York
@@ -77,7 +79,7 @@
                 </h3>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="flip-left" data-aos-delay="200">
                 <img src="images/destination-6.jpg" alt="">
                 <h3>
                     <span>Paris</span>
@@ -87,7 +89,10 @@
     </div>
     <!-- destinations section ends -->
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/script.js"></script>
 </body>
 

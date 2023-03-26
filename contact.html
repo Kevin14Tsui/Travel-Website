@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- font awesomme cdn like -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
@@ -16,7 +18,7 @@
 
 <body>
     <!-- header section starts -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
 
         <section class="flex">
 
@@ -43,11 +45,12 @@
         <section>
 
             <div class="row">
-                <iframe class="map"
+                <iframe class="map" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.7329083219165!2d114.19601515152281!3d22.28810520825576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040103b47a5aa9%3A0xe4596b9223d004a8!2z5YyX6KeS6Iux55qH6YGTMjU3LTI3M-iZn-WNl-aWueWkp-W7iA!5e0!3m2!1szh-TW!2shk!4v1679749798756!5m2!1szh-TW!2shk"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <form action="" method="post">
+                <form action="" method="post" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                    data-aos-offset="500" data-aos-duration="500">
                     <h3>get in touch</h3>
                     <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
                     <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
@@ -60,19 +63,19 @@
             </div>
 
             <div class="grid">
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <i class="fas fa-phone"></i>
                     <h3>phone number</h3>
                     <a href="tel:1112223333">+111-222-3333</a>
                 </div>
 
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <i class="fas fa-envelope"></i>
                     <h3>email address</h3>
                     <a href="mailto:travel@gmail.com">travel@gmail.com</a>
                 </div>
 
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <i class="fas fa-envelope"></i>
                     <h3>ofiice address</h3>
                     <a href="#">257-273 King's Road,North Point</a>
@@ -83,6 +86,11 @@
         </section>
     </div>
     <!-- contact section ends -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/script.js"></script>
 </body>
 

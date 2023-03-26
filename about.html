@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- font awesomme cdn like -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
@@ -16,7 +18,7 @@
 
 <body>
     <!-- header section starts -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
 
         <section class="flex">
 
@@ -36,14 +38,14 @@
     </header>
     <!-- header section ends -->
     <!-- about section starts -->
-    <div class="container about">
+    <div class="container about" data-aos="fade-down">
 
-        <h1 class="heading">About us</h1>
+        <h1 class="heading" data-aos="zoom-out">About us</h1>
 
 
         <section>
             <div class="details">
-                <div class="box">
+                <div class="box" data-aos="zoom-in" data-aos-delay="500">
                     <h3>Why choose us</h3>
                     <p>We provide convenient, fast and high-quality travel
                     </p>
@@ -51,19 +53,19 @@
                 </div>
             </div>
             <div class="grid">
-                <div class="box">
+                <div class="box" data-aos="fade-up">
                     <img src="images/about-img-1.svg" alt="">
                     <h3>easy bookings</h3>
                     <p>We provide convenient, fast and high-quality travel</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-delay="400">
                     <img src="images/about-img-2.svg" alt="">
                     <h3>travel world</h3>
                     <p>We provide convenient, fast and high-quality travel
 
                     </p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-delay="600">
                     <img src="images/about-img-3.svg" alt="">
                     <h3>enjoy tours</h3>
                     <p>We provide convenient, fast and high-quality travel
@@ -77,13 +79,13 @@
     <!-- reviews section ends -->
     <div class="container reviews">
 
-        <h1 class="heading">clent's reviews</h1>
+        <h1 class="heading" data-aos="zoom-out">clent's reviews</h1>
 
         <section class="grid">
 
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="images/pic-1.png" alt="">
-                <h3>john deo</h3>
+                <h3>Tim</h3>
                 <p>I had a great trip, great service, looking forward to the next time</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -95,9 +97,9 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="images/pic-2.png" alt="">
-                <h3>john deo</h3>
+                <h3>Limi</h3>
                 <p>I had a great trip, great service, looking forward to the next time</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -109,9 +111,9 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="images/pic-3.png" alt="">
-                <h3>john deo</h3>
+                <h3>Lucas</h3>
                 <p>I had a great trip, great service, looking forward to the next time</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -123,9 +125,9 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="images/pic-4.png" alt="">
-                <h3>john deo</h3>
+                <h3>Annie</h3>
                 <p>I had a great trip, great service, looking forward to the next time</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -137,9 +139,9 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="images/pic-5.png" alt="">
-                <h3>john deo</h3>
+                <h3>Kenny</h3>
                 <p>I had a great trip, great service, looking forward to the next time</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -151,9 +153,9 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="images/pic-6.png" alt="">
-                <h3>john deo</h3>
+                <h3>Aqua</h3>
                 <p>I had a great trip, great service, looking forward to the next time</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -169,7 +171,10 @@
     </div>
     <!-- reviews section ends -->
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/script.js"></script>
 </body>
 
